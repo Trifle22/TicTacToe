@@ -98,5 +98,5 @@ function gameRestart() {
 function updateResults() {
   win_x.innerHTML = win.x;
   win_0.innerHTML = win['0'];
-  win_draw.innerHTML = win.draw;
+  win_draw.innerHTML = 'Ничья: ' + win.draw;
 }
