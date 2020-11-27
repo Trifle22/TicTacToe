@@ -25,11 +25,12 @@ body {
           align-items: center;
           margin-top: 100px;
           padding: 30px;
-          border: 1px solid black;
+          border: 2px solid lightcoral;
           background-color: SteelBlue;
           -webkit-box-shadow: 20px 20px 8px 0px rgba(34, 60, 80, 0.2);
 box-shadow: 20px 20px 8px 0px rgba(34, 60, 80, 0.2);
 border-radius: 10px;
+color: whitesmoke;
 }
 .area {
   width: 200px;
@@ -45,7 +46,7 @@ border-radius: 10px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-          border: 1px solid black;
+          border: 1px solid whitesmoke;
           margin-bottom: 20px;
 }
 .cell {
@@ -53,7 +54,7 @@ border-radius: 10px;
       flex-basis: 32.32%;
   height: 32.32%;
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   display: inline;
   cursor: pointer;
   display: -webkit-box;
@@ -66,10 +67,26 @@ border-radius: 10px;
       -ms-flex-align: center;
           align-items: center;
           font-size: 30px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          background-color: transparent;
+}
+.cell:hover {
+  background-color: lightcoral;
+}
+.restart {
+  background-color: lightcoral;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 .results {
   margin-top: 20px;
-  border: 1px solid black;
+  border: 1px solid lightcoral;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
